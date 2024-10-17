@@ -65,9 +65,17 @@ header, section, footer, #vue-app
   font-size: 0.85em;
 }
 
-footer {
+header, footer {
   display: flex;
+}
+
+footer {
   flex-direction: column;
+}
+
+header > .header-content,
+footer > .footer-copy {
+  padding: 2rem 0 1rem;
 }
 
 footer > .footer-copy {
