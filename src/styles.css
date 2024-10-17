@@ -50,12 +50,17 @@ a:hover {
 header, section, footer, #vue-app 
 {
   max-width: 1280px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header > .header-content, 
+section {
+  padding: 0 1rem;
 }
 
 #vue-app {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem 1rem;
   outline: 1px solid var(--outline-color_blue);
   box-shadow: 3px 3px 9px 3px rgba(0,0,0,0.75);
   padding: 50px;
@@ -75,10 +80,10 @@ footer {
 
 header > .header-content,
 footer > .footer-copy {
-  padding: 2rem 0 1rem;
+  padding: 2rem 1rem;
 }
 
 footer > .footer-copy {
  align-self: flex-end;
- padding: 2rem 0 1rem;
+ padding: 2rem 1rem;
 }
