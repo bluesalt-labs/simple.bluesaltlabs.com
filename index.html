@@ -4,32 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BlueSalt Labs Website (Simple)</title>
+    <title>BlueSalt Labs | Simple</title>
     <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
     <main>
-        <h1>BlueSalt Labs | Simple</h1>  
+      <header class="cta">
+        <h1>BlueSalt Labs | Simple</h1>
+      </header>
+      
 
-        <div>
-          <ul>
-            <li>set up a bare-bones implementation of vite + vue.</li>
-            <li>Figure out how I want to deploy this project. GitHub? Host files somewhere?</li>
-            <li>Add templating, styling, and content from my bluesalt labs main home page.</li>
-            <li>
-              Create functional components:
-              <ul>
-                <li>Create to do list functionality. Use JSON files, then localStorage</li>
-                <li>Create contact app functionality. Use localStorage, then file import/export, then some kind of data storage instead of localStorage (ideally local file based).</li>
-                <li>create basic user authentication and roles</li>
-                <li>create blog functionality. allow anonymous users and logged in users to post comments. </li>
-                <li>create basic CMS / page from data like functionality by creating a set of Project pages with a standardized template, attributes, etc. </li>
-                <li>Figure out what additional functionality I'd like to add. </li>
-              </ul>
-          </li>
-          <li>eventually some kind of data store, and/or back end API system. </li>
-          </ul>
-        </div>
+      <section class="introduction">
+        <h2>Introduction</h2>
+
+        <p>
+          This is a new implementation of my bluesaltlabs.com website, but this time I'm starting from the basics.<br />
+          The first commit to this project is a single index.html file.<br />
+          The second commit adds vite and vue with minimal configuration.<br />
+          The idea of this project is to review each part of web development one step at a time and re-build my confidence.<br />
+        </p>
+        
+        <p>
+          I started learning to code because I loved the feeling of making the computer execute increasingly powerful tasks.<br />
+          In the beginning as a child, I was taught to derive knowledge from books and libraries.<br />
+          But there were these things called computers that were far more interesting and powerful, and I knew they were the future.<br />
+        </p>
+
+        <p>
+          I tinkered with a wide variety of things over the years, learned scripting, game modding, and became adept and just about any application I could find.<br />
+          But I still struggled to understand how coding itself worked.<br />
+        </p>
+
+        <p>
+          That's when I was introduced to Python by a friend of mine named Ian. Suddenly coding made sense and a whole new world of possibility opened.<br />
+          I went to college for a year to learn coding for real, but flunked out the first year because it was much more difficult than I expected.<br />
+          After taking a year off I went back to school for 2 more years, but I eventually found a real developer job and dropped out of school entirely.<br />
+        </p>
+
+        <p>
+          Learning on the job was always easier anyway.
+        </p>
+
+        <p>
+          I spent a few years learning anything and everything I could while working as a full stack web developer for 3 separate companies and a few side gigs.<br />
+        </p>
+
+        <p>
+          After 8 years of steady increase, events lead to complete burnout and loss of my software development employment.<br />
+          For 8 years I wrote and thought about code almost every day, until I burned out and could barely stand to look at a screen for more than 15 minutes at a time. <br />
+        </p>
+
+        <p>
+          That was 2 years ago.
+        </p>
+
+        <p>
+          I've started to write code regularly again this last month, but it's been one of the most difficult mental challenges I've ever had to face.
+        </p>
+
+        <p>
+          This project is intended to build my confidence and remind myself why I started doing this in the first place.<br />
+          I started this because writing code and "making the computers go beep boop" is something I've been passionate about my entire life.<br />
+        </p>
+
+        <p>
+          When I was 8 years old, I wanted to grow up to be an inventor. I had a notebook with written plans and sketches where I would write down my ideas.<br />
+          As a web developer, I get to be a real-life inventor every single day. The last 2 years ripped that passion from me, and I'm tired of it. 
+        </p>
+
+        <p>
+          This is a project about starting things over again and remembering my why. 
+        </p>
+
+        <p class="small">
+          Luke Sontrop<br />
+          2024.10.16
+        </p>
+        
+        <hr />
+
+        <h4>To Do</h4>
+        <ul>
+          <li>set up a bare-bones implementation of vite + vue.</li>
+          <li>set up a bare-bones implementation of styling. <a href="https://tailwindcss.com/" target="_blank">Tailwind css</a>?</li>
+          <li>Figure out how I want to deploy this project. GitHub? Host files somewhere?</li>
+          <li>Add templating, styling, and content from my bluesalt labs main home page.</li>
+          <li>
+            Create functional components:
+            <ul>
+              <li>Create to do list functionality. Use JSON files, then localStorage</li>
+              <li>Create contact app functionality. Use localStorage, then file import/export, then some kind of data storage instead of localStorage (ideally local file based).</li>
+              <li>create basic user authentication and roles</li>
+              <li>create blog functionality. allow anonymous users and logged in users to post comments. </li>
+              <li>create basic CMS / page from data like functionality by creating a set of Project pages with a standardized template, attributes, etc. </li>
+              <li>Figure out what additional functionality I'd like to add. </li>
+            </ul>
+        </li>
+        <li>eventually some kind of data store, and/or back end API system. </li>
+        </ul>
+      </section>
+
+      <section id="vue-app">
+        vue app mount point
+      </section>
+
+      <footer>
+        <div class="footer-copy">
+          &copy; <span id="year">2024</span> <a href="https://bluesaltlabs.com">BlueSalt Labs</a>
+        </p>
+      </footer>
+
     </main>
+
+    <script type="module" src="src/main.js"></script>
   </body>
 </html>

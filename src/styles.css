@@ -1,0 +1,76 @@
+:root {
+  color-scheme: light dark;
+  
+  font-family: system-ui, Helvetica, Arial, sans-serif; 
+  line-height: 1.2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+  /********** Variables (Dark) **********/
+  --font-color: rgba(255, 255, 255, 0.87);
+  --background-color: #242424;
+  --a-color: #646cff;
+  --a-color_hover: #535bf2;
+  --outline-color_blue: #1d24a4;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+
+    /********** Variables (Light) **********/
+    --font-color: rgba(33, 53, 71, 0.87);
+    --background-color: #ffffff;    
+    --a-color_hover: #747bff;
+    --outline-color_blue: #565bc1;
+  }
+}
+
+/********** Styles Start **********/
+:root {
+  color: var(--font-color);
+  background-color: var(--background-color);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: inherit;
+  color: var(--a-color);
+}
+a:hover {
+  color: var(--a-color__hover);
+}
+
+header, section, footer, #vue-app 
+{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+#vue-app {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  outline: 1px solid var(--outline-color_blue);
+  box-shadow: 3px 3px 9px 3px rgba(0,0,0,0.75);
+  padding: 50px;
+}
+
+.small {
+  font-size: 0.85em;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer > .footer-copy {
+ align-self: flex-end;
+ padding: 2rem 0 1rem;
+}
